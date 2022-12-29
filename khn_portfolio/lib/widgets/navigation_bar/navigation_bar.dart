@@ -11,7 +11,7 @@ class NavigationBar extends StatelessWidget {
         SizedBox(
           height: 80,
           width: 150,
-          child: Image.asset('assets/logoWhite.png'),
+          child: Image.asset('images/logoWhite.png'),
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
