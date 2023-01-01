@@ -29,11 +29,27 @@ class _OmMegViewDesktop extends StatelessWidget {
       children: [
         Center(
           child: Container(
-            padding: EdgeInsets.all(25),
-            child: FittedBox(
-              fit: BoxFit.fill,
-              child: Image.asset(
-                'images/profilbilde_MedBakgrunn.png',
+            padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(228, 233, 252, 1),
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color.fromRGBO(47, 90, 200, 1).withOpacity(1),
+                    offset: const Offset(-6, 6), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: FittedBox(
+                fit: BoxFit.fill,
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(20)),
+                  child: Image.asset(
+                    'images/profilbilde_MedBakgrunn.png',
+                    width: 400,
+                  ),
+                ),
               ),
             ),
           ),
@@ -42,15 +58,15 @@ class _OmMegViewDesktop extends StatelessWidget {
             child: Container(
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-            color: Color.fromRGBO(228, 233, 252, 1),
+            color: const Color.fromRGBO(228, 233, 252, 1),
             border: Border.all(
-              color: Color.fromRGBO(228, 233, 252, 1),
+              color: const Color.fromRGBO(228, 233, 252, 1),
             ),
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: const BorderRadius.all(Radius.circular(20)),
             boxShadow: [
               BoxShadow(
-                color: Color.fromRGBO(47, 90, 200, 1).withOpacity(1),
-                offset: Offset(-6, 6), // changes position of shadow
+                color: const Color.fromRGBO(47, 90, 200, 1).withOpacity(1),
+                offset: const Offset(-6, 6), // changes position of shadow
               ),
             ],
           ),
@@ -75,26 +91,24 @@ class _OmMegViewMobile extends StatelessWidget {
     return Column(
       children: [
         Center(
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Image.asset(
-              'images/profilbilde.png',
-            ),
+          child: Image.asset(
+            'images/profilbilde.png',
+            width: 300,
           ),
         ),
         Center(
             child: Container(
           decoration: BoxDecoration(
-            color: Color.fromRGBO(228, 233, 252, 1),
+            color: const Color.fromRGBO(228, 233, 252, 1),
             border: Border.all(
-              color: Color.fromRGBO(228, 233, 252, 1),
+              color: const Color.fromRGBO(228, 233, 252, 1),
             ),
-            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderRadius: const BorderRadius.all(Radius.circular(20)),
             boxShadow: [
               BoxShadow(
-                color: Color.fromRGBO(47, 90, 200, 1).withOpacity(1),
+                color: const Color.fromRGBO(47, 90, 200, 1).withOpacity(1),
 
-                offset: Offset(-6, 6), // changes position of shadow
+                offset: const Offset(-6, 6), // changes position of shadow
               ),
             ],
           ),
