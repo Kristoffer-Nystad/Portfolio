@@ -7,10 +7,13 @@ class OmMegViewMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(
-          child: Image.asset(
-            'images/profilbilde.png',
-            width: 300,
+        Flexible(
+          flex: 1,
+          fit: FlexFit.tight,
+          child: Center(
+            child: Image.asset(
+              'images/profilbilde.png',
+            ),
           ),
         ),
         Center(
