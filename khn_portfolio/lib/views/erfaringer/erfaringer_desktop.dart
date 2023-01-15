@@ -6,38 +6,41 @@ class ErfaringerViewDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        const Spacer(),
-        const Flexible(
-          flex: 2,
-          fit: FlexFit.tight,
-          child: ContStyle(),
-        ),
-        const Spacer(),
-        const Flexible(
-          flex: 2,
-          fit: FlexFit.tight,
-          child: ContStyle(),
-        ),
-        const Spacer(),
-        Column(
-          children: const [
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ContStyle(),
-            ),
-            Spacer(),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: ContStyle(),
-            )
-          ],
-        ),
-        const Spacer()
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Row(
+        children: [
+          const Spacer(),
+          const Flexible(
+            flex: 2,
+            fit: FlexFit.tight,
+            child: ContStyle(),
+          ),
+          const Spacer(),
+          const Flexible(
+            flex: 2,
+            fit: FlexFit.tight,
+            child: ContStyle(),
+          ),
+          const Spacer(),
+          Column(
+            children: const [
+              Flexible(
+                flex: 1,
+                fit: FlexFit.tight,
+                child: ContStyle(),
+              ),
+              Spacer(),
+              Flexible(
+                flex: 1,
+                fit: FlexFit.tight,
+                child: ContStyle(),
+              )
+            ],
+          ),
+          const Spacer()
+        ],
+      ),
     );
   }
 }
